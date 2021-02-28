@@ -1,0 +1,17 @@
+{
+  "name": "bookstore-backend",
+  "main": "server.js",
+  "scripts": {
+    "fixtures:load": "node ./cli/fixturesLoad.js",
+    "fixtures:delete": "node ./cli/fixturesDelete.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.0.0",
+    "koa": "^2.13.1",
+    "koa-body-parser": "^1.1.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.0.0",
+    "mongoose": "^5.11.18"
+  }
+}
