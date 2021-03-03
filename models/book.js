@@ -18,21 +18,21 @@ const BookSchema = new Schema(
     rating: {
       type: Number
     },
-    tags: [{
-      type: String
-    }],
     year: {
       type: Number
     },
     pages: {
       type: Number
     },
-    isbn: {
+    isbn10: {
       type: String
     },
-    author: {
+    isbn13: {
       type: String
     },
+    authors: [{
+      type: String
+    }],
     published: {
       type: String
     },
@@ -43,6 +43,12 @@ const BookSchema = new Schema(
       type: String
     },
     image: {
+      type: String
+    },
+    categories: [{
+      type: String
+    }],
+    options: { 
       type: String
     }
   }
