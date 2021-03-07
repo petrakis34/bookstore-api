@@ -29,8 +29,7 @@
       "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/",
       "rating": 4.2,
       "image": "https://images-na.ssl-images-amazon.com/images/I/91WlvEND3rL.jpg",
-      "categories": ["coding", "educational"],
-      "options": "some options"
+      "categories": ["coding", "educational"]
     },
     {
       "isbn10": "111449360",     
@@ -45,8 +44,7 @@
       "website": "http://speakingjs.com/",
       "rating": 4.5,
       "image": "https://images-na.ssl-images-amazon.com/images/I/91sXL7wrjgL.jpg",
-      "categories": ["coding", "educational"],
-      "options": "some options"
+      "categories": ["coding", "educational"]
     },
     {
       "isbn10": "111491950",     
@@ -61,8 +59,7 @@
       "website": "http://chimera.labs.oreilly.com/books/1234000000262/index.html",
       "rating": 3.8,
       "image": "https://images-na.ssl-images-amazon.com/images/I/512Hli3f6FL._SX379_BO1,204,203,200_.jpg",
-      "categories": ["coding", "educational"],
-      "options": "some options"
+      "categories": ["coding", "educational"]
     },
     {
       "isbn10": "111593270",     
@@ -77,8 +74,7 @@
       "website": "https://leanpub.com/understandinges6/read",
       "rating": 2.5,
       "image": "https://images-na.ssl-images-amazon.com/images/I/51pwi8M6l8L._SX379_BO1,204,203,200_.jpg",
-      "categories": ["coding", "educational"],
-      "options": "some options"
+      "categories": ["coding", "educational"]
     },
     {
       "isbn10": "111491900",     
@@ -93,8 +89,7 @@
       "website": "https://github.com/getify/You-Dont-Know-JS/tree/master/es6%20&%20beyond",
       "rating": 1.9,
       "image": "https://images-na.ssl-images-amazon.com/images/I/71mKvD89oEL.jpg",
-      "categories": ["coding", "educational"],
-      "options": "some options"
+      "categories": ["coding", "educational"]
     },
     {
       "isbn10": "111449320",     
@@ -109,8 +104,7 @@
       "website": "http://chimera.labs.oreilly.com/books/1230000000561/index.html",
       "rating": 3.2,
       "image": "https://images-na.ssl-images-amazon.com/images/I/41hZDooM2zL._SX302_BO1,204,203,200_.jpg",
-      "categories": ["coding", "educational"],
-      "options": "some options"
+      "categories": ["coding", "educational"]
     },
     {
       "isbn10": "111449330",     
@@ -125,8 +119,7 @@
       "website": "http://chimera.labs.oreilly.com/books/1234000001708/index.html",
       "rating": 4.1,
       "image": "https://images-na.ssl-images-amazon.com/images/I/51wKBhPHoBL._SX379_BO1,204,203,200_.jpg",
-      "categories": ["coding", "educational"],
-      "options": "some options"
+      "categories": ["coding", "educational"]
     }
   ]
 }
