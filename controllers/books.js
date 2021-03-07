@@ -24,9 +24,19 @@ async function create(ctx, next) {
 }
 
 async function search(ctx, next) {
-  const books = await Book.find({
-    $text : { $search : ctx.params.term }
-  });
+  let books = [];
+  if (ctx.query.filters) {
+    const filters = ctx.query.filters.split(',').map(f => {
+      return {
+        [f]: { $regex: new RegExp(`.*${ctx.params.term}.*`, 'i') }
+      };
+    });
+    books = await Book.find({ $or: filters });
+  } else {
+    books = await Book.find({
+      $text : { $search: ctx.params.term }
+    });
+  }
 
   ctx.status = 200;
   ctx.body = books;
