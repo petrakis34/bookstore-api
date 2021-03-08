@@ -1,4 +1,5 @@
 const Book = require('../models/book');
+const fs = require('fs');
 
 async function list(ctx, next) {
   const books = await Book.find({});
@@ -15,7 +16,14 @@ async function show(ctx, next) {
 }
 
 async function create(ctx, next) {
+  const {image: {path, name} = {}} = ctx.request.files || {};
   const bookParams = ctx.request.body;
+  if (name) {
+    fs.copyFileSync(path, `public/images/${name}`)
+    bookParams.image = `${ctx.origin}/images/${name}`;
+  }
+  // TODO: to remove
+  console.log(JSON.stringify(bookParams));
   const book = new Book(bookParams);
 
   const response = await book.save();

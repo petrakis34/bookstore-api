@@ -47,10 +47,7 @@ const BookSchema = new Schema(
     },
     categories: [{
       type: String
-    }],
-    options: { 
-      type: String
-    }
+    }]
   }
 );
 
@@ -59,7 +56,7 @@ BookSchema.index({
   subtitle: 'text',
   description: 'text',
   isbn: 'text',
-  author: 'text',
+  authors: 'text',
   publisher: 'text'
 });
 

@@ -1,9 +1,10 @@
 const Koa = require('koa');
 const Router = require('@koa/router');
 const mongoose = require('mongoose');
-const bodyParser = require('koa-body-parser');
+const koaBody = require('koa-body')({multipart: true, uploadDir: './public/images'});
 const logger = require('koa-logger');
 const cors = require('@koa/cors');
+const koaStatic = require('koa-static');
 const {
   list: listBooks,
   show: showBook,
@@ -17,11 +18,11 @@ mongoose.connect('mongodb://localhost:27017/bookstore');
 app.listen(3030);
 
 router.get('/books', listBooks);
-router.post('/books', createBook);
+router.post('/books', koaBody, createBook);
 router.get('/books/:bookId', showBook);
 router.get('/books/search/:term', searchBooks);
 
 app.use(logger());
-app.use(bodyParser());
 app.use(cors());
+app.use(koaStatic('./public'));
 app.use(router.routes());
