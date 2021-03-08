@@ -14,7 +14,7 @@ const {
 
 const app = new Koa();
 const router = new Router();
-mongoose.connect('mongodb://localhost:27017/bookstore');
+mongoose.connect('mongodb+srv://adminuser:bookstore2021@bookstore-cluster.qtjzu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 app.listen(3030);
 
 router.get('/books', listBooks);

@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 const Book = require('../models/book');
-mongoose.connect('mongodb://localhost:27017/bookstore');
+mongoose.connect('mongodb+srv://adminuser:bookstore2021@bookstore-cluster.qtjzu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 Book.deleteMany().
   then(() => {
